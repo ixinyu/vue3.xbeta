@@ -33,7 +33,7 @@ ref本质：
   - ref 底层的本质其实还是reactive
     系统会自动根据我们给的ref传入的值将它转换成ref(xx)-> reactive({value:xx})
 ref注意点：
-  - 在vue中使用ref的值不用通过value获取
+  - 在vue template中使用ref的值不用通过value获取
   - 在js中使用ref的值必须通过value获取   
  * 
  */
