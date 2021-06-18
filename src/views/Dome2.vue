@@ -16,6 +16,12 @@
 - reactive 是vue3中提供的实现响应式数据的方法
 - 在vue2中响应式数据是通过defineProperty 来实现的
 - 在vue3中响应式数据是通过es6的Proxy来实现
+vue2.x Object.defineProperty存在的问题
+递归遍历所有的对象的属性，这样如果我们数据层级比较深的话，是一件很耗费性能的事情
+只能应用在对象上，不能用于数组
+只能够监听定义时的属性，不能监听新加的属性，这也就是为什么在vue中要使用Vue.set的原因，删除也是同理
+
+
 reactive 注意点：
 - reactive 参数必须是对象
 - 如果给reactive传递了其他对象
